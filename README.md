@@ -23,4 +23,26 @@ Explotación
     ↓
 Validación
 ```
+## ¿Qué es SeImpersonatePrivilege?
+
+`SeImpersonatePrivilege` es un privilegio de Windows que permite a un proceso **impersonar el contexto de seguridad de un cliente autenticado**.
+
+En términos sencillos:
+
+```text
+Cliente
+   │
+   │ Autenticación
+   ▼
+Servicio
+   │
+   │ Impersonation
+   ▼
+Contexto del cliente
+```
+
+## ¿Por qué nos interesa en Red Team?
+
+Porque determinados servicios de Windows y cuentas de servicio pueden tener SeImpersonatePrivilege habilitado. Si conseguimos controlar un proceso que posee este privilegio, en determinadas condiciones podemos abusar de mecanismos de Windows para obtener un token con mayores privilegios.
+
 
