@@ -4,8 +4,6 @@
 
 Este repositorio documenta el proceso de escalada de privilegios en un sistema Windows mediante el abuso de `SeImpersonatePrivilege`, desde su identificación hasta la obtención y validación de privilegios elevados.
 
-El procedimiento fue realizado en un entorno de laboratorio controlado con fines educativos.
-
 ## Objetivo
 
 Comprender cómo `SeImpersonatePrivilege` puede convertirse en un vector de escalada de privilegios y cómo identificar y aprovechar esta condición durante una evaluación de seguridad.
