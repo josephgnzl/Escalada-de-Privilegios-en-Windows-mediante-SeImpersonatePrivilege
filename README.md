@@ -10,7 +10,7 @@ Análisis práctico de una técnica de `Windows Privilege Escalation` basada en 
 
 ## Objetivo
 
-Querer comprender cómo `SeImpersonatePrivilege` puede convertirse en un vector de escalada de privilegios y cómo identificar y aprovechar esta condición durante una evaluación de seguridad.
+Comprender cómo `SeImpersonatePrivilege` puede convertirse en un vector de escalada de privilegios y cómo identificar y aprovechar esta condición durante una evaluación de seguridad.
 
 ## Metodología
 
