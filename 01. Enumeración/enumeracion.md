@@ -7,10 +7,11 @@ En este caso, comenzaremos identificando el usuario actual, los grupos a los que
 ```cmd
 whoami
 whoami /user
-whoami /groups
 whoami /priv
 ```
+
 Nuestra shell interactiva muestra que el usuario actual dispone de varios privilegios, entre los cuales destaca SeImpersonatePrivilege en estado Enabled.
+
 ```
 Privilege Name                State
 ============================= ========
