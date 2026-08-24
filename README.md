@@ -6,7 +6,7 @@
 
 ## Descripción
 
-Este repositorio documenta el proceso de escalada de privilegios en un sistema Windows mediante el abuso de `SeImpersonatePrivilege`, desde su identificación hasta la obtención y validación de privilegios elevados.
+Análisis práctico de una técnica de `Windows Privilege Escalation` basada en `SeImpersonatePrivilege`. En el repositorio muestro el flujo utilizado durante una evaluación de seguridad, desde la enumeración inicial hasta la obtención de una shell con privilegios `SYSTEM`.
 
 ## Objetivo
 
