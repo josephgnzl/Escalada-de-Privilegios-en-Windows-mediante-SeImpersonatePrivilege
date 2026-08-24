@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Active%20Directory-Pentesting-red" alt="AD Pentesting">
-  <p align="center">  <img src="https://img.shields.io/badge/josephgnzl-Pentesting-red" alt="AD Pentesting"></p>
 </p>
 
 ## Descripción
