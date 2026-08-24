@@ -1,3 +1,5 @@
+## Mitigación 
+
 La mitigación debe centrarse en evitar que cuentas o servicios comprometibles dispongan de `SeImpersonatePrivilege` sin una necesidad legítima.
 
 - Ejecutar servicios con el mínimo privilegio necesario.
