@@ -2,9 +2,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Active%20Directory-Pentesting-red" alt="AD Pentesting">
-  <img src="https://img.shields.io/badge/Attack-Shadow%20Credentials-black" alt="Shadow Credentials">
-  <img src="https://img.shields.io/badge/Nivel-Intermedio%2FAvanzado-orange" alt="Nivel">
-  <img src="https://img.shields.io/badge/Uso-Educativo%20%2F%20Lab-blue" alt="Uso educativo">
 </p>
 
 ## Descripción
