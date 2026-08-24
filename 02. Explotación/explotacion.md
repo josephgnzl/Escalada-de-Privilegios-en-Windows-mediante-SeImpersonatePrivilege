@@ -4,8 +4,8 @@ Con `SeImpersonatePrivilege` identificado y habilitado, podemos pasar a la fase 
 
 Para este escenario utilizaremos:
 
-- `GodPotato.exe` — explotación de `SeImpersonatePrivilege`.
-- `nc.exe` — recepción de una conexión `reverse shell`.
+- `GodPotato.exe` explotación de `SeImpersonatePrivilege`.
+- `nc.exe` recepción de una conexión `reverse shell`.
 
 Ambos binarios deben estar disponibles en la máquina atacante y posteriormente ser transferidos al sistema víctima.
 
