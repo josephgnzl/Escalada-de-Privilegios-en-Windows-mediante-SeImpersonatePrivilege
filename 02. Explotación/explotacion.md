@@ -67,4 +67,4 @@ Finalmente, validamos el contexto de ejecución:
 C:\WINDOWS\system32> whoami
 nt authority\system
 ```
-Con esto confirmamos que GodPotato permitió abusar de SeImpersonatePrivilege para obtener una reverse shell ejecutándose como NT AUTHORITY\SYSTEM.
+Con esto confirmamos que GodPotato permitió abusar de SeImpersonatePrivilege para obtener una reverse shell ejecutándose como `NT AUTHORITY\SYSTEM.`
